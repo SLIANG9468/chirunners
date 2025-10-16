@@ -6,13 +6,36 @@
     <title>photos</title>
 
 <style>
+
+
 body {
+  background-image: url("./assets/teams/team01chi.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  position: relative;
+
   font-family: Arial, sans-serif;
   line-height: 1.6;
   padding: 20px;
   max-width: 800px;
   margin: auto;
 }
+
+.overlay {
+  position: fixed;
+  inset: 0; /* same as top:0; right:0; bottom:0; left:0 */
+  background-color: rgba(179, 125, 125, 0.6); /* white with 60% opacity */
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* place above overlay */
+  text-align: center;
+  padding: 2rem;
+}
+
 
 h1 {
   text-align: center;
@@ -61,21 +84,30 @@ img {
 </style>
 </head>
 <body>
-
-<h1>芝加哥驰跑团荣誉出品 - 人脸识别照片服务<br>
- <span style="font-size: 0.7em;">只需轻轻一扫，就能自动找到属于你的所有比赛照片——快捷又方便
+  <div class="overlay"></div>
+  <div class="content">
+<h1>芝加哥驰跑团荣誉出品
+<br>人脸识别照片服务<br>
+ <span style="font-size: 0.6em;">轻轻一扫，比赛照片一键呈现！
+  <br>快捷、方便、又智能
 </span></h1>
 
 <h2>🏅 人脸识别使用方法</h2>
 <div class="panel">
   <h3>👉 使用步骤</h3>
-  <ol>
-    <li>点击<a href="https://public.thehoncho.app/album/68d59f768cc821afd31c4e0e?type=all">链接</a></li>
-    <li>点击“FindMe” 按键</li>
-    <l1>提交一张自拍照，系统自动识别 —— 我们的智能系统会自动匹配出你在赛事中的所有照片；</li>
-    <li>接受电子邮件，查看你的专属相册 —— 即刻浏览、下载并分享你的精彩瞬间！</li>
-  </ol>
-    <h3>无需翻找，无需筛选 —— 你的所有美好回忆，都在这里等你。
+ 
+    <div>1. 点击<strong><a href="https://public.thehoncho.app/album/68d59f768cc821afd31c4e0e?type=all" target = "_blank"> 链接 </a></strong>或扫下面的二维码</div>
+    <img src="./assets/moments/zeffyqr-code.png">
+
+    <div>2. 点击<strong>“FindMe”</strong>按键
+    <br>提交一张自拍照，系统自动识别
+    <br>我们的智能系统会自动匹配出你在赛事中的所有照片
+    <br>
+    <br>3. 接受电子邮件，查看你的专属相册
+    <br>即刻浏览、下载并分享你的精彩瞬间！</div>
+  </ul>
+    <h3>无需翻找，无需筛选
+    <br>你的所有美好回忆，都在这里等你。
     <br>立即体验，重温属于你的芝马时刻！</h3>
 
 </div>
@@ -88,24 +120,26 @@ img {
 我们将制作一个特别的画廊 —— “我最喜欢的照片”，
 <br>展示每位跑者心中最有意义、最难忘的画面。</h3>
   <h3>👉 参与方式</h3>
-  <ol>
-    <li>请选择 1 - 2 张你最喜欢的照片 - 可来自加碳会或比赛当天。</li>
-    <li>点击<a href="https://docs.google.com/forms/d/e/1FAIpQLSc7pDNvI_lRPqra6Lo1YXIk1-koGg9Y-ZH_dvIov_Kz1zosWw/viewform?usp=header">Google Form</a>或者 email 至<a href="mailto:sherri@chirunners.org">sherri@chirunners.org</a></li>
-    <li>（可选）可以附上一句简短说明或小故事，
-    <br>告诉我们你为什么喜欢这张照片——我们可能会在展示时一起刊登你的文字！</li>
-  </ol>
-   <h3>让我们一起记录每一个笑容、努力与感动的瞬间。<br>感谢你与我们分享这份珍贵的回忆！❤️</h3>
+ 
+    <div>1. 请选择 1 - 2 张你最喜欢的照片 - 可来自加碳会或比赛当天。
+    <br>2. 点击<strong><a href="https://docs.google.com/forms/d/e/1FAIpQLSc7pDNvI_lRPqra6Lo1YXIk1-koGg9Y-ZH_dvIov_Kz1zosWw/viewform?usp=header">Google Form</a></strong> 或者 email 至<a href="mailto:sherri@chirunners.org">sherri@chirunners.org</a>
+    <br>3.（可选）可以附上一句简短说明或小故事，
+    <br>告诉我们你为什么喜欢这张照片,
+    <br>我们可能会在展示时一起刊登你的文字!</div>
+
+   <h3>让我们一起记录每一个笑容、努力与感动的瞬间。
+   <br>感谢你与我们分享这份珍贵的回忆！❤️</h3>
 
 </div>
 
 <h2>🏅 “我最喜欢的照片”画廊</h2>
 <div class="panel">
-    <h3>请前往<a href = "./2025moments.html" target = "_blank">画廊</a>欣赏</h3>
+    <h3>请前往 <a href = "./2025moments.html" target = "_blank"> 画廊 </a>欣赏</h3>
 </div>
 
 <h2>🏅 摄影师致谢区</h2>
 <div class="panel">
-<h3>感谢摄影师：Kenny（风城网事）； 章运（运姐）；林燕松；Lili Zhang；黄海燕; 月军；安之；YUAN Jiang; TAN Kemin; WANG Wenhua; WU Ruishan; XU Jianjiang </h3>
+
 <p>他们，不在赛道上奔跑，却让每一位跑者闪光。
 
 <br>他们是芝加哥驰跑团的摄影师——
@@ -130,8 +164,10 @@ img {
 <br>💖 感谢您的善意与支持，
 <br>让我们一起，用影像记录——
 <br>这场关于热爱、坚持与人性光辉的马拉松。
+<br>
+<br>感谢摄影师：Kenny（风城网事），章运（运姐），林燕松，Lili Zhang，黄海燕，月军，安之，YUAN Jiang，TAN Kemin，WANG Wenhua，WU Ruishan，XU Jianjiang，MA Lan
     </p>
-    <h2>请点击<a href="https://www.zeffy.com/en-US/donation-form/a4a1ed62-e0f7-4a51-b7c8-3e4f70fb71e7" target = "_blank">捐款链接</a>或扫下面的二维码</h2>
+    <h3>请点击 <a href="https://www.zeffy.com/en-US/donation-form/a4a1ed62-e0f7-4a51-b7c8-3e4f70fb71e7" target = "_blank">捐款链接</a> 或扫下面的二维码</h3>
     <img src="./assets/moments/zeffyqr-code.png">
 </div>
 
@@ -146,6 +182,6 @@ acc.forEach(h => {
   });
 });
 </script>
-
+</div>
 </body>
 </html>
